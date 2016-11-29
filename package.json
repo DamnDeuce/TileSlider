@@ -1,0 +1,24 @@
+{
+  "name": "tile-slider",
+  "version": "1.0.0",
+  "description": "Another slider",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slider",
+    "tile"
+  ],
+  "author": "Gosha Abramov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "connect-history-api-fallback": "^1.3.0",
+    "gulp": "^3.9.1",
+    "gulp-inject-svg": "^0.1.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.9"
+  }
+}
