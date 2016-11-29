@@ -1,2 +1,3 @@
 # TileSlider
-Another type of image slider
+Еще один слайдер для изображений.
+Используется в проекте rosizo.ru.
