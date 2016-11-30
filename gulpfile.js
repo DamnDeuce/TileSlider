@@ -27,7 +27,7 @@ var path = {
     watch: {
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
-        html: '*.html',
+        html: '**/*.html',
     },
 };
 
@@ -37,7 +37,7 @@ gulp.task('webserver', function () {
         server: {
             baseDir: '.'
         },
-        tunnel: true,
+        //tunnel: true,
         host: 'localhost',
         port: 9001,
         logPrefix: 'TileSlider',
@@ -51,13 +51,9 @@ gulp.task('style:build', function() {
     return gulp.src(path.src.style.files)
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(autoprefixer({
-            browsers: ['last 10 versions'],
-            cascade: false,
-        }))
         .pipe(sourcemaps.write(path.dist.sourcemaps, { sourceRoot: path.src.style.sourceRoot }))
         .pipe(gulp.dest(path.dist.style))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(browserSync.stream());
 });
 gulp.task('js:build', function() {
    return gulp.src(path.src.js.files)

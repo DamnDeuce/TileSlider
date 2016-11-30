@@ -1,0 +1,1 @@
+{"version":3,"file":"../main.css","sources":["main.scss"],"sourcesContent":["body {\r\n  font: 14px/1.3 'Roboto', sans-serif;\r\n}"],"mappings":"AAAA,AAAA,IAAI,CAAC;EACH,IAAI,EAAE,6BAA8B,GACrC","names":[],"sourceRoot":"/src/style/"}
