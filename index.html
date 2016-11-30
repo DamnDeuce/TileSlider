@@ -3,8 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <title>TileSlider</title>
+    <link rel="stylesheet" type="text/css" href="/dist/style/main.css">
+    <link rel="stylesheet" type="text/css" href="/dist/style/tile-slider.css">
 </head>
 <body>
-
+    <h1>Tile Slider</h1>
+    <div class="tile-slider">
+        <a href="javascript:void(0)" class="arrow arrow-prev arrow-border"></a>
+        <a href="javascript:void(0)" class="arrow arrow-next arrow-border"></a>
+        <div class="tile-slider__slides">
+            <div class="ts-slide ts-slide_current"
+                 data-img-src="/content/images/1.jpg">
+                <div class="ts-item ts-item-1">
+                    <div class="ts-item__bg"></div>
+                </div>
+                <div class="ts-item ts-item-2">
+                    <div class="ts-item__bg"></div>
+                </div>
+                <div class="ts-item ts-item-3">
+                    <div class="ts-item__bg"></div>
+                    <div class="ts-item__content">
+                        <time class="ts-item__datetime"></time>
+                        <div class="ts-item__name-wrap">
+                            <a href="/events/event/351/" class="ts-item__name">Название первого слайда</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-slide"
+                 data-img-src="/content/images/2.jpg">
+                <div class="ts-item ts-item-1">
+                    <div class="ts-item__bg"></div>
+                </div>
+                <div class="ts-item ts-item-2">
+                    <div class="ts-item__bg"></div>
+                </div>
+                <div class="ts-item ts-item-3">
+                    <div class="ts-item__bg"></div>
+                    <div class="ts-item__content">
+                        <time class="ts-item__datetime"></time>
+                        <div class="ts-item__name-wrap">
+                            <a href="/events/event/57/" class="ts-item__name">Название второго слайда</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-slide"
+                 data-img-src="/content/images/3.jpg">
+                <div class="ts-item ts-item-1">
+                    <div class="ts-item__bg"></div>
+                </div>
+                <div class="ts-item ts-item-2">
+                    <div class="ts-item__bg"></div>
+                </div>
+                <div class="ts-item ts-item-3">
+                    <div class="ts-item__bg"></div>
+                    <div class="ts-item__content">
+                        <time class="ts-item__datetime"></time>
+                        <div class="ts-item__name-wrap">
+                            <a href="/events/event/373/" class="ts-item__name">Название третьего слайда</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-slide"
+                 data-img-src="/content/images/4.jpg">
+                <div class="ts-item ts-item-1">
+                    <div class="ts-item__bg"></div>
+                </div>
+                <div class="ts-item ts-item-2">
+                    <div class="ts-item__bg"></div>
+                </div>
+                <div class="ts-item ts-item-3">
+                    <div class="ts-item__bg"></div>
+                    <div class="ts-item__content">
+                        <time class="ts-item__datetime"></time>
+                        <div class="ts-item__name-wrap">
+                            <a href="/events/event/373/" class="ts-item__name">Название четвертого слайда</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/dist/js/class.TileSlider.js"></script>
+    <script src="/dist/js/init.js"></script>
 </body>
 </html>
